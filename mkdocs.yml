@@ -11,6 +11,7 @@ edit_uri: edit/main/docs/
 
 # Configuración del tema
 theme:
+  favicon: assets/images/favicon.ico
   name: material
   language: es
   features:
@@ -21,6 +22,17 @@ theme:
     - search.share
     - content.code.annotate
     - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
 
 # Plugins
 plugins:
@@ -49,6 +61,7 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - attr_list
+  
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
